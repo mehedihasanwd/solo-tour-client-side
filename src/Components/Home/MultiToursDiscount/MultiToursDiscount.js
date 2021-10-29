@@ -6,7 +6,7 @@ const MultiToursDiscount = () => {
     <div className="container py-5 bg-grey">
       <h4 className="text-danger">Multi Tours</h4>
       <h2>Discount on Quantity</h2>
-      <p>
+      <p className="fs-3">
         <span className="text-danger">10%</span> Discount on 2nd Tour &{" "}
         <span className="text-danger">20%</span> Discount on 3rd+ Tour
       </p>
