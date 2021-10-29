@@ -3,11 +3,6 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import "./AddNewService.css";
 
-/* 
-https://immense-wildwood-76819.herokuapp.com/tours
-http://localhost:5000/tours
-*/
-
 const AddNewService = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
@@ -26,7 +21,7 @@ const AddNewService = () => {
         <h1 className="mt-3 mb-5">Add a new Tour</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-            {...register("name", { required: true, maxLength: 20 })}
+            {...register("name", { required: true, maxLength: 500 })}
             placeholder="Name..."
           />
           <textarea {...register("desc")} placeholder="Description..." />
