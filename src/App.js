@@ -6,6 +6,9 @@ import Header from "./Components/Shared/Header";
 import Footer from "./Components/Shared/Footer";
 import Home from "./Components/Home/Home/Home";
 import Login from "./Components/Login/Login";
+import MyOrders from "./Components/MyOrders/MyOrders";
+import ManageAllOrders from "./Components/ManageAllOrders/ManageAllOrders";
+import AddNewService from "./Components/AddNewService/AddNewService";
 
 function App() {
   return (
@@ -20,8 +23,14 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/about">
-              <Home></Home>
+            <Route path="/myorders">
+              <MyOrders></MyOrders>
+            </Route>
+            <Route path="/manageorders">
+              <ManageAllOrders></ManageAllOrders>
+            </Route>
+            <Route path="/addservice">
+              <AddNewService></AddNewService>
             </Route>
             <Route path="/placeorder">
               <Home></Home>

@@ -19,11 +19,11 @@ const useFirebase = () => {
 
   // Google Sign In
   const signInUsingGoogle = () => {
-    // return signInWithPopup(auth, googleProvider);
-    signInWithPopup(auth, googleProvider).then((result) => {
-      const user = result?.user;
-      setUser(user);
-    });
+    return signInWithPopup(auth, googleProvider);
+    // signInWithPopup(auth, googleProvider).then((result) => {
+    //   const user = result?.user;
+    //   setUser(user);
+    // });
   };
 
   // User State

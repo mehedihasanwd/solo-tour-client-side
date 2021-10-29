@@ -24,13 +24,25 @@ const Header = () => {
               Home
             </Nav.Link>
 
-            <Nav.Link className="text-danger" as={Link} to="/about">
-              About
+            <Nav.Link className="text-danger" as={Link} to="/myorders">
+              My Orders
             </Nav.Link>
 
-            <Nav.Link className="text-danger" as={Link} to="/placeorder">
-              Place Order
-            </Nav.Link>
+            {user?.email ? (
+              <Nav.Link className="text-danger" as={Link} to="/manageorders">
+                Manage All Orders
+              </Nav.Link>
+            ) : (
+              ""
+            )}
+
+            {user?.email ? (
+              <Nav.Link className="text-danger" as={Link} to="/addservice">
+                Add A New Service
+              </Nav.Link>
+            ) : (
+              ""
+            )}
 
             {user?.email ? (
               <button

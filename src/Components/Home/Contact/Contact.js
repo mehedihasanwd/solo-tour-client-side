@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div>
-      <h2 className="my-4">
+      <h2 className="container my-4">
         Have any Queries?<span className="text-danger"> Write Us!</span>
       </h2>
       <div className="container">
