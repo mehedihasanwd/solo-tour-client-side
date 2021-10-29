@@ -11,11 +11,11 @@ const Services = () => {
   }, []);
 
   return (
-    <div className="container py-4">
-      <h2 className="mb-3">
+    <div className="container py-5">
+      <h2>
         We've Got Some<span className="text-danger"> Great Deals</span>
       </h2>
-      <div className="row row-cols-1 row-cols-md-3 g-5 my-1">
+      <div className="row row-cols-1 row-cols-md-3 g-5 py-5">
         {services.map((service) => (
           <Service key={service._id} service={service}></Service>
         ))}
