@@ -13,8 +13,8 @@ const Banner = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h1 className="text-lg">Great Trip for Solo Travellers</h1>
-          <p className="fs-4">
+          <h1 className="text-lg mb-4">Great Trip for Solo Travellers</h1>
+          <p className="fs-4 text-sm">
             Since 2015, we’ve helped more than 500,000 people of all ages enjoy
             the best outdoor experience.
           </p>
