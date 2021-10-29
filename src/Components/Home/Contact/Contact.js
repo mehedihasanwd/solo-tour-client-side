@@ -2,11 +2,11 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div>
-      <h2 className="container my-4">
+    <div className="container">
+      <h2 className="py-4">
         Have any Queries?<span className="text-danger"> Write Us!</span>
       </h2>
-      <div className="container">
+      <div>
         <form className="my-5">
           <div className="mb-3 text-start">
             <label htmlFor="exampleInputEmail1" className="form-label">
