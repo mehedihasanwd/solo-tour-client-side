@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="bg-dark pt-3">
       <div className="container d-flex justify-content-center align-items-center h-100">
         <p className="text-white">
-          Copyright &copy; Solo Tour, All Rights Reserved.
+          Copyright &copy;SoloTour, All Rights Reserved.
         </p>
       </div>
     </div>

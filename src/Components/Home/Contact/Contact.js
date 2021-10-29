@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
       <h2 className="my-4">
-        Have any Query?<span className="text-danger"> Write Us!</span>
+        Have any Queries?<span className="text-danger"> Write Us!</span>
       </h2>
       <div className="container">
         <form className="my-5">
