@@ -38,7 +38,7 @@ const Header = () => {
 
             {user?.email ? (
               <Nav.Link className="text-danger" as={Link} to="/addservice">
-                Add A New Service
+                Add A New Tour
               </Nav.Link>
             ) : (
               ""
