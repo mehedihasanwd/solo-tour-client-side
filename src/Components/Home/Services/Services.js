@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
 import Service from "../Service/Service";
 
 const Services = () => {
@@ -15,11 +16,15 @@ const Services = () => {
       <h2>
         We've Got Some<span className="text-danger"> Great Deals</span>
       </h2>
-      <div className="row row-cols-1 row-cols-md-3 g-5 py-5">
-        {services.map((service) => (
-          <Service key={service._id} service={service}></Service>
-        ))}
-      </div>
+      {services.length === 0 ? (
+        <Spinner animation="border" variant="danger" />
+      ) : (
+        <div className="row row-cols-1 row-cols-md-3 g-5 py-5">
+          {services.map((service) => (
+            <Service key={service._id} service={service}></Service>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
