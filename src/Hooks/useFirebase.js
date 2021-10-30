@@ -12,6 +12,10 @@ import {
 firebaseInit();
 
 const useFirebase = () => {
+  // User State
+  const [user, setUser] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+
   // Google Provider
   const googleProvider = new GoogleAuthProvider();
   // Get Auth
@@ -20,21 +24,17 @@ const useFirebase = () => {
   // Google Sign In
   const signInUsingGoogle = () => {
     return signInWithPopup(auth, googleProvider);
-    // signInWithPopup(auth, googleProvider).then((result) => {
-    //   const user = result?.user;
-    //   setUser(user);
-    // });
   };
-
-  // User State
-  const [user, setUser] = useState({});
 
   // OnAuthStateChanged
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
+      } else {
+        setUser({});
       }
+      setIsLoading(false);
     });
   }, []);
 
@@ -48,6 +48,7 @@ const useFirebase = () => {
     user,
     signInUsingGoogle,
     logOut,
+    isLoading,
   };
 };
 
