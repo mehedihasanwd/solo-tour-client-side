@@ -38,6 +38,7 @@ const useFirebase = () => {
     });
   }, []);
 
+  // User Sign Out Function
   const logOut = () => {
     signOut(auth).then(() => {
       setUser({});

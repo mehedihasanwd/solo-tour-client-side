@@ -11,7 +11,6 @@ import ManageAllOrders from "./Components/ManageAllOrders/ManageAllOrders";
 import AddNewService from "./Components/AddNewService/AddNewService";
 import PlaceOrder from "./Components/PlaceOrder/PlaceOrder";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
-import Service from "./Components/Home/Service/Service";
 
 function App() {
   return (

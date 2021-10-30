@@ -6,6 +6,7 @@ import "./AddNewService.css";
 const AddNewService = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
+    // Used axios to load tours data
     axios
       .post("https://immense-wildwood-76819.herokuapp.com/tours", data)
       .then((res) => {

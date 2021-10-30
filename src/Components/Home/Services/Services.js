@@ -3,9 +3,11 @@ import { Spinner } from "react-bootstrap";
 import Service from "../Service/Service";
 
 const Services = () => {
+  // State declaration for Services
   const [services, setServices] = useState([]);
 
   useEffect(() => {
+    // Fetching Services data
     fetch("https://immense-wildwood-76819.herokuapp.com/tours")
       .then((res) => res.json())
       .then((data) => setServices(data));
