@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Welcome To Solo Tour
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project Live Site Link: https://solo-tour-client-side.web.app/
+
+Solo Tour Description: Solo Tour is a Tourism website. Tourists can visit, create account, book their right booking package and also can delete package. This is a responsive Website;
+
+Functionality of Solo Tour: • This is fast loading React JS Website • It has Node JS as run time for backend api call. • Used MongoDB atlas to store data. • This is a Responsive react website • Also used React Router Dom for easiest routing through one page to another without loading the page fully.
+
 
 ## Available Scripts
 
