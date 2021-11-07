@@ -38,14 +38,14 @@ const PlaceOrder = () => {
     const price = tour.price;
     const ordersInfo = { email, tourId, name, desc, img, price };
 
-    fetch("http://localhost:5000/orders", {
+    fetch("https://immense-wildwood-76819.herokuapp.com/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
       body: JSON.stringify(ordersInfo),
     });
-    alert("Order has beed placed");
+    alert("Order has been placed");
 
     e.target.reset();
   };

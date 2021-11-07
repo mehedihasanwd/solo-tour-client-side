@@ -33,7 +33,7 @@ const MyOrders = () => {
   return (
     <div className="container min-height py-4">
       <h2>My Orders</h2>
-      <div className="row row-cols-1 row-cols-md-2 g-4 py-5">
+      <div className="row row-cols-1 row-cols-md-3 g-4 py-5">
         {orders.map((order) => (
           <CardGroup key={order._id}>
             <Card className="shadow-lg">
